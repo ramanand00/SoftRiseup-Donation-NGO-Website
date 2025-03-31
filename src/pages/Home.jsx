@@ -17,7 +17,7 @@ export default function Home() {
                     Sorry, your browser doesn't support videos.
                 </video>
                 <div className="typewriter">
-                    <h2>ACTION, SERVICE, HOPE FOR AIDS... </h2>
+                    <h2>Alone we can do so littile; <br /> together we can do much.</h2>
                 </div>
             </div>
             <Landing />
