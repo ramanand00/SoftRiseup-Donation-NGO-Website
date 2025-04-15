@@ -38,7 +38,7 @@ const pythonCourse = {
         {
             title: 'Data Structures',
             topics: [
-                'Lists and tuples hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh  hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
+                'Lists and tuples',
                 'Dictionaries and sets',
                 'List comprehensions',
                 'Working with collections'
