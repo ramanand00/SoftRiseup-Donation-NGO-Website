@@ -86,7 +86,7 @@ export default function Navbar() {
                             <Link to="/about" className={`nav-item nav-link ${path === '/about' ? "active" : ""}`}>About</Link>
                             <Link to="/courses" className={`nav-item nav-link ${path === '/courses' ? "active" : ""}`}>Courses</Link>
                             <div className="nav-item dropdown" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
-                                <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Bachelor</Link>
+                                <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Bachelor course</Link>
                                 <div className={dropdownOpen ? "dropdown-menu show" : "dropdown-menu"}>
                                     <Link to="/" className="dropdown-item">BSc.CSIT</Link>
                                     <Link to="/about" className="dropdown-item">B.IT</Link>
