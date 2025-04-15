@@ -7,6 +7,7 @@ import ContactForm from "../components/ContactForm";
 import Landing from "../components/Landing";
 import Funds from "../components/Funds";
 import BackToTop from "../components/BackToTop";
+import Courses from "../components/Courses";
 
 export default function Home() {
     return (
@@ -17,10 +18,11 @@ export default function Home() {
                     Sorry, your browser doesn't support videos.
                 </video>
                 <div className="typewriter">
-                    <h2>Alone we can do so littile; <br /> together we can do much.</h2>
+                    <h2>Welcome to IT world...</h2>
                 </div>
             </div>
             <Landing />
+            {/* <Courses /> */}
             <Initiatives />
             <Funds />
             <ContactForm />

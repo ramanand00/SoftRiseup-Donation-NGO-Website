@@ -79,19 +79,19 @@ export default function Navbar() {
                     <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-
+                    
                     <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div className="navbar-nav ml-auto">
                             <Link to="/" className={`nav-item nav-link ${path === '/' ? "active" : ""}`}>Home</Link>
                             <Link to="/about" className={`nav-item nav-link ${path === '/about' ? "active" : ""}`}>About</Link>
-                            <Link to="/event" className={`nav-item nav-link ${path === '/event' ? "active" : ""}`}>Events</Link>
+                            <Link to="/courses" className={`nav-item nav-link ${path === '/courses' ? "active" : ""}`}>Courses</Link>
                             <div className="nav-item dropdown" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
-                                <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Pages</Link>
+                                <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Courses</Link>
                                 <div className={dropdownOpen ? "dropdown-menu show" : "dropdown-menu"}>
-                                    <Link to="/" className="dropdown-item">Detail Page</Link>
-                                    <Link to="/about" className="dropdown-item">What We Do</Link>
-                                    <Link to="/event" className="dropdown-item">Meet The Team</Link>
-                                    <Link to="/contact" className="dropdown-item">Become A Volunteer</Link>
+                                    <Link to="/" className="dropdown-item">BSc.CSIT</Link>
+                                    <Link to="/about" className="dropdown-item">B.IT</Link>
+                                    <Link to="/courses" className="dropdown-item">BCA</Link>
+                                    <Link to="/contact" className="dropdown-item">Computer Engineering</Link>
                                     <hr className='dropdown-divider' />
                                     <Link to="/donate" className="dropdown-item">Donate Now</Link>
                                 </div>

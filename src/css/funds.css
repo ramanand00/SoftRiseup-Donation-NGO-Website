@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     /* The image used */
-    background-image: url("../assets/facts.jpg");
+    background-image: url("../assets/facts.jpeg");
     background-color: rgba(0, 0, 0, 0.5);
     /* Set a specific height */
     height: 300px;

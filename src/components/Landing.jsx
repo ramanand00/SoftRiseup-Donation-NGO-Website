@@ -1,5 +1,5 @@
 import '../css/landing.css';
-import main from '../assets/LandImg.jpg';
+import main from '../assets/LandImg.png';
 import { useNavigate } from 'react-router-dom';
 
 export default function Landing() {
@@ -9,7 +9,7 @@ export default function Landing() {
                 <span className="left">
                     <div className="caption1">
                         <hr />
-                        <h4>WE ARE SOFTRISEUP NGO</h4>
+                        <h4>WE ARE SOFTRISEUP</h4>
                     </div>
                     <div className="titles">
                         <div className="caption2">
@@ -19,8 +19,8 @@ export default function Landing() {
                             <p>Bring out the change in society by spreading hands to help the unprivileged children and other backward communities.</p>
                         </div>
                         <div className="btns">
-                            <button onClick={() => window.open("https://swd.vit.edu/", "_blank", "noopener noreferrer")} type="button" className="btn btn-outline-info">Know More</button>
-                            <button type="button" className="btn btn-success" onClick={()=>navigate("/donate")}>DONATE</button>
+                            <button onClick={() => window.open("#", "_blank", "noopener noreferrer")} type="button" className="btn btn-outline-info">Know More</button>
+                            <button type="button" className="btn btn-success" onClick={()=>navigate("/#")}>DONATE</button>
                         </div>
                     </div>
 

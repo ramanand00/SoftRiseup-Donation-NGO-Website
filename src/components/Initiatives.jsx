@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
-import sudhaar from '../assets/Initiatives/Sudhaar.jpeg';
-import gyaan from '../assets/Initiatives/Gyaan.jpeg';
-import nirmaan from '../assets/Initiatives/Nirmaan.jpeg';
-import gogreen from '../assets/Initiatives/Go-Green.jpeg';
-import muskaan from '../assets/Initiatives/Muskaan.jpeg';
+import sudhaar from '../assets/Initiatives/Sudhaar.jpg';
+import gyaan from '../assets/Initiatives/Gyaan.jpg';
+import nirmaan from '../assets/Initiatives/Nirmaan.jpg';
+import gogreen from '../assets/Initiatives/Go-Green.webp';
+import muskaan from '../assets/Initiatives/Muskaan.jpg';
 import '../css/initiatives.css';
 
 const Initiatives = () => {
