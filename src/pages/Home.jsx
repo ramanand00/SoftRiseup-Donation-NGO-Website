@@ -7,7 +7,6 @@ import ContactForm from "../components/ContactForm";
 import Landing from "../components/Landing";
 import Funds from "../components/Funds";
 import BackToTop from "../components/BackToTop";
-import Courses from "../components/Courses";
 
 export default function Home() {
     return (
