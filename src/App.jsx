@@ -10,7 +10,7 @@ import Courses from "./pages/courses/Courses";
 import CourseDetails from "./pages/courses/CourseDetails";
 
 // Lets Import the courses
-// import AngularCourse from "./pages/courses/courses/AngularCourse";
+import AngularCourse from "./pages/courses/courses/AngularCourse";
 // import ReactCourse from "./pages/courses/courses/ReactCourse";
 // import VueCourse from "./pages/courses/courses/VueCourse";
 // import NodeCourse from "./pages/courses/courses/nodecourse";
@@ -64,7 +64,7 @@ export default function App() {
         <Route exact path="*" element={<Navigate to={"/"} />} />
 
         {/* let's import the courses */}
-        {/* <Route exact path="/courses/angular" element={<AngularCourse />} /> */}
+        <Route exact path="/courses/angular" element={<AngularCourse />} />
         {/* <Route exact path="/courses/react" element={<ReactCourse />} /> */}
         {/* <Route exact path="/courses/vue" element={<VueCourse />} /> */}
         {/* <Route exact path="/courses/node" element={<NodeCourse />} /> */}

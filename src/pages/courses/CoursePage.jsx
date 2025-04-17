@@ -60,7 +60,7 @@ const CoursePage = ({ course }) => {
                         </div>
                     </div>
 
-                    <div className="course-content">
+                    <div className="course-contents">
                         <div className="course-sections">
                             <h2>Course Curriculum</h2>
                             {course.curriculum.map((section, index) => (

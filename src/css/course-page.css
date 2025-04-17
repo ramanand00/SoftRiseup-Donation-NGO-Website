@@ -89,11 +89,13 @@
     transform: translateY(-2px);
 }
 
-.course-content {
+.course-contents {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 40px;
 }
+
+
 
 .section {
     background: white;
