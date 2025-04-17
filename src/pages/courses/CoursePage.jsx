@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, useParams } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import PageHeader from '../../components/PageHeader';
@@ -6,6 +7,22 @@ import BackToTop from '../../components/BackToTop';
 import '../../css/course-page.css';
 
 const CoursePage = ({ course }) => {
+    const { id } = useParams();
+
+    const getCoursePagePath = () => {
+        switch (id) {
+            case 'angular':
+                return '/blogs/angularcourse';
+            case 'vue':
+                return '/blogs/vuecourse';
+            case 'go':
+                return '/blogs/gocourse';
+            // Add more cases for other courses as needed
+            default:
+                return '/courses';
+        }
+    };
+
     return (
         <>
             <Navbar />
@@ -23,7 +40,23 @@ const CoursePage = ({ course }) => {
                                 <span className="duration">Duration: {course.duration}</span>
                                 <span className="level">Level: {course.level}</span>
                             </div>
-                            <button className="enroll-button">Enroll Now</button>
+                            <div className="course-navigation">
+                                <Link to={`/courses/${course.id}/details`} className="nav-link">
+                                    <i className="fas fa-info-circle"></i> Course Details
+                                </Link>
+                                <Link to={`/courses/${course.id}/syllabus`} className="nav-link">
+                                    <i className="fas fa-book"></i> Syllabus
+                                </Link>
+                                <Link to={`/courses/${course.id}/resources`} className="nav-link">
+                                    <i className="fas fa-folder"></i> Resources
+                                </Link>
+                                <Link to={`/courses/${course.id}/discussion`} className="nav-link">
+                                    <i className="fas fa-comments"></i> Discussion
+                                </Link>
+                            </div>
+                            <Link to={getCoursePagePath()} className="enroll-button">
+                                Enroll Now
+                            </Link>
                         </div>
                     </div>
 

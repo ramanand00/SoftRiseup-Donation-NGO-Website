@@ -1096,6 +1096,19 @@ const CourseDetails = () => {
         }
     };
 
+     // Links to your separately designed detailed pages
+    //  const CoursePages = {
+    //     vue: '/vue-detailed',     
+    //     angular: '/angular-detailed',
+    //     react: '/react-detailed',
+    //     unity: '/unity-detailed',
+    //     unreal: '/unreal-detailed',
+    //     godot: '/godot-detailed',
+    //     wordpress: '/wordpress-detailed',
+    //     blockchain: '/blockchain-detailed',
+    //     iot: '/iot-detailed'
+    // };
+
     const course = courseDetails[courseId];
 
     if (!course) {
@@ -1126,7 +1139,7 @@ const CourseDetails = () => {
                             </div>
                             <p className="description">{course.description}</p>
                             <div className="price">${course.price}</div>
-                            <button className="enroll-button">Enroll Now</button>
+                            <Link to={`/courses/${course.id}`} className="enroll-button">Enroll Now</Link>
                         </div>
                     </div>
 

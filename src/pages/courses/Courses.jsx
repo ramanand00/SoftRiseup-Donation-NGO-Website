@@ -428,6 +428,22 @@ const Courses = () => {
                             onChange={handleSearch}
                         />
                     </div>
+                    <div className="filter-options">
+                            <select>
+                                <option value="">All Categories</option>
+                                <option value="Development">Development</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Data Science">Data Science</option>
+                                <option value="Design">Design</option>
+                                <option value="Business">Business</option>
+                            </select>
+                            <select>
+                                <option value="">All Levels</option>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
                     {courseCategories.map((category) => {
                         const filteredCourses = filterCourses(category.courses);
                         if (filteredCourses.length === 0) return null;

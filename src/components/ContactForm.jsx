@@ -73,6 +73,29 @@ function ContactForm() {
                         <h3>Get In Touch</h3>
                         <h2>Contact for any query</h2>
                     </div>
+                    <div className="contact-info">
+                        <div className="contact-item">
+                            <i className="fa fa-map-marker-alt"></i>
+                            <div className="contact-text">
+                                <h3>Address</h3>
+                                <a href="https://www.google.com/maps/place//@27.7465179,85.3244763,15.44z/data=!4m8!1m7!3m6!1s0x3bc2eb962ae682bf:0x8de98404f56323e3!2sVIT+INSTRUMENTATION+DEPARTMENT!8m2!3d18.4636275!4d73.8678019!16s%2Fg%2F11h_v74q8p?entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"><p>Tokha-5, Kathmandu, Nepal</p></a>
+                            </div>
+                        </div>
+                        <div className="contact-item">
+                            <i className="fa fa-phone-alt"></i>
+                            <div className="contact-text">
+                                <h3>Phone</h3>
+                                <a href=" tel:+977-9843237329"><p>+977-9827399860</p></a>
+                            </div>
+                        </div>
+                        <div className="contact-item">
+                            <i className="fa fa-envelope"></i>
+                            <div className="contact-text">
+                                <h3>Email</h3>
+                                <a href="mailto:mrazzanand@gmail"><p>mrazzanand@gmail</p></a>
+                            </div>
+                        </div>
+                    </div> <br /><br /><br />
                     <div className="contact-img">
                         <img src={contact} alt="Image" />
                     </div>

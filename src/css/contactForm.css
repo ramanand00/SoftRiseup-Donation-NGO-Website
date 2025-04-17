@@ -81,6 +81,18 @@
     .contact .contact-form {
         max-width: 400px;
     }
+    .email-map-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .map-location {
+        width: 100%;
+    }
+    
+    .map-location a {
+        justify-content: center;
+    }
   }
   
   @media (max-width: 575.98px) {
@@ -110,3 +122,40 @@
     font-weight: 500;
     border-radius: 12px;
   }
+
+.email-map-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.map-location {
+    flex: 1;
+}
+
+.map-location a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.map-location a:hover {
+    background-color: #e9ecef;
+    transform: translateY(-2px);
+}
+
+.map-location i {
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+.map-location span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}

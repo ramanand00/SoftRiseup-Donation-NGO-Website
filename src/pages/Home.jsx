@@ -16,9 +16,9 @@ export default function Home() {
                 <video src={space} type="video/mp4" autoPlay loop muted>
                     Sorry, your browser doesn't support videos.
                 </video>
-                <div className="typewriter">
+                {/* <div className="typewriter">
                     <h2>Welcome to IT world...</h2>
-                </div>
+                </div> */}
             </div>
             <Landing />
             {/* <Courses /> */}
