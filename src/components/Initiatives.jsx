@@ -93,7 +93,7 @@ const Initiatives = () => {
       <br />
       <br />
       <div className="title">
-        <h1><span>OUR</span> Projects</h1>
+        <h1><span>OUR</span> Courses</h1>
       </div>
       <div className="initiative-cards">
         <Carousel

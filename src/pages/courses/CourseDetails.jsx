@@ -12,6 +12,7 @@ const CourseDetails = () => {
     // This would typically come from an API or database
     const courseDetails = {
         'vue': {
+            id: 'vue',
             title: 'Vue.js Development',
             description: 'Learn Vue.js, a progressive JavaScript framework for building user interfaces. This course covers everything from basic concepts to advanced features.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
@@ -40,6 +41,7 @@ const CourseDetails = () => {
             reviews: 125
         },
         'angular': {
+            id: 'angular',
             title: 'Angular Development',
             description: 'Master Angular, a powerful framework for building dynamic web applications. Learn TypeScript, components, services, and more.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
@@ -68,6 +70,7 @@ const CourseDetails = () => {
             reviews: 98
         },
         'nextjs': {
+            id: 'nextjs',
             title: 'Next.js Development',
             description: 'Learn Next.js, the React framework for production. Build server-rendered applications with ease.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
@@ -94,6 +97,7 @@ const CourseDetails = () => {
             reviews: 87
         },
         'tailwind': {
+            id: 'tailwind',
             title: 'Tailwind CSS',
             description: 'Master utility-first CSS framework for rapid UI development.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
@@ -118,6 +122,7 @@ const CourseDetails = () => {
             reviews: 65
         },
         'bootstrap': {
+            id: 'bootstrap',
             title: 'Bootstrap Development',
             description: 'Learn Bootstrap framework for creating responsive and mobile-first websites.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
@@ -142,6 +147,7 @@ const CourseDetails = () => {
             reviews: 72
         },
         'nodejs': {
+            id: 'nodejs',
             title: 'Node.js Development',
             description: 'Learn Node.js for building scalable server-side applications with JavaScript.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
@@ -170,6 +176,7 @@ const CourseDetails = () => {
             reviews: 112
         },
         'express': {
+            id: 'express',
             title: 'Express.js Development',
             description: 'Master Express.js framework for building robust web applications and APIs.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
@@ -198,6 +205,7 @@ const CourseDetails = () => {
             reviews: 89
         },
         'php': {
+            id: 'php',
             title: 'PHP Development',
             description: 'Learn PHP for server-side web development and dynamic website creation.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
@@ -226,6 +234,7 @@ const CourseDetails = () => {
             reviews: 78
         },
         'django': {
+            id: 'django',
             title: 'Django Development',
             description: 'Master Django framework for building secure and maintainable web applications.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg',
@@ -254,6 +263,7 @@ const CourseDetails = () => {
             reviews: 95
         },
         'flask': {
+            id: 'flask',
             title: 'Flask Development',
             description: 'Learn Flask framework for building lightweight and flexible web applications.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
@@ -281,6 +291,7 @@ const CourseDetails = () => {
             reviews: 82
         },
         'rails': {
+            id: 'rails',
             title: 'Ruby on Rails Development',
             description: 'Master Ruby on Rails framework for rapid web application development.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original.svg',
@@ -309,6 +320,7 @@ const CourseDetails = () => {
             reviews: 76
         },
         'aspnet': {
+            id: 'aspnet',
             title: 'ASP.NET Development',
             description: 'Learn ASP.NET for building enterprise-grade web applications.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg',
@@ -336,6 +348,7 @@ const CourseDetails = () => {
             reviews: 88
         },
         'mysql': {
+            id: 'mysql',
             title: 'MySQL Database',
             description: 'Learn MySQL for relational database management and optimization.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
@@ -362,6 +375,7 @@ const CourseDetails = () => {
             reviews: 92
         },
         'postgresql': {
+            id: 'postgresql',
             title: 'PostgreSQL Database',
             description: 'Master PostgreSQL for advanced database management and features.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
@@ -388,6 +402,7 @@ const CourseDetails = () => {
             reviews: 78
         },
         'mongodb': {
+            id: 'mongodb',
             title: 'MongoDB Database',
             description: 'Learn MongoDB for NoSQL database management and document storage.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
@@ -414,6 +429,7 @@ const CourseDetails = () => {
             reviews: 85
         },
         'firebase': {
+            id: 'firebase',
             title: 'Firebase Development',
             description: 'Master Firebase for real-time database and backend services.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
@@ -440,6 +456,7 @@ const CourseDetails = () => {
             reviews: 67
         },
         'oracle': {
+            id: 'oracle',
             title: 'Oracle Database',
             description: 'Learn Oracle Database for enterprise-level database management.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg',
@@ -466,6 +483,7 @@ const CourseDetails = () => {
             reviews: 45
         },
         'sqlite': {
+            id: 'sqlite',
             title: 'SQLite Development',
             description: 'Master SQLite for lightweight database management.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg',
@@ -490,6 +508,7 @@ const CourseDetails = () => {
             reviews: 58
         },
         'redis': {
+            id: 'redis',
             title: 'Redis Development',
             description: 'Learn Redis for in-memory data structure storage and caching.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg',
@@ -516,6 +535,7 @@ const CourseDetails = () => {
             reviews: 63
         },
         'aws': {
+            id: 'aws',
             title: 'AWS Cloud Development',
             description: 'Master Amazon Web Services for cloud computing and infrastructure.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg',
@@ -544,6 +564,7 @@ const CourseDetails = () => {
             reviews: 112
         },
         'gcp': {
+            id: 'gcp',
             title: 'Google Cloud Development',
             description: 'Learn Google Cloud Platform for cloud computing and services.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg',
@@ -571,6 +592,7 @@ const CourseDetails = () => {
             reviews: 89
         },
         'azure': {
+            id: 'azure',
             title: 'Microsoft Azure Development',
             description: 'Master Microsoft Azure for cloud computing and enterprise solutions.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg',
@@ -598,6 +620,7 @@ const CourseDetails = () => {
             reviews: 94
         },
         'docker': {
+            id: 'docker',
             title: 'Docker Development',
             description: 'Learn Docker for containerization and deployment.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
@@ -624,6 +647,7 @@ const CourseDetails = () => {
             reviews: 76
         },
         'kubernetes': {
+            id: 'kubernetes',
             title: 'Kubernetes Development',
             description: 'Master Kubernetes for container orchestration and management.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg',
@@ -651,6 +675,7 @@ const CourseDetails = () => {
             reviews: 68
         },
         'terraform': {
+            id: 'terrafom',
             title: 'Terraform Development',
             description: 'Learn Terraform for infrastructure as code and automation.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg',
@@ -677,6 +702,7 @@ const CourseDetails = () => {
             reviews: 59
         },
         'reactnative': {
+            id: 'reactnative',
             title: 'React Native Development',
             description: 'Learn React Native for cross-platform mobile app development.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
@@ -704,6 +730,7 @@ const CourseDetails = () => {
             reviews: 87
         },
         'flutter': {
+            id: 'flutter',
             title: 'Flutter Development',
             description: 'Master Flutter for beautiful and fast cross-platform mobile apps.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
@@ -731,6 +758,7 @@ const CourseDetails = () => {
             reviews: 92
         },
         'ethicalhacking': {
+            id: 'ethicalhacking',
             title: 'Ethical Hacking',
             description: 'Learn ethical hacking techniques and security best practices.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
@@ -758,6 +786,7 @@ const CourseDetails = () => {
             reviews: 78
         },
         'networksecurity': {
+            id: 'networksecurity',
             title: 'Network Security',
             description: 'Master network security principles and implementation.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
@@ -784,6 +813,7 @@ const CourseDetails = () => {
             reviews: 65
         },
         'websecurity': {
+            id: 'websecurity',
             title: 'Web Application Security',
             description: 'Learn web application security and penetration testing.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
@@ -810,6 +840,7 @@ const CourseDetails = () => {
             reviews: 72
         },
         'machinelearning': {
+            id: 'machinelearning',
             title: 'Machine Learning',
             description: 'Learn machine learning algorithms and implementation.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
@@ -836,6 +867,7 @@ const CourseDetails = () => {
             reviews: 95
         },
         'deeplearning': {
+            id: 'deeplearning',
             title: 'Deep Learning',
             description: 'Master deep learning concepts and neural networks.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
@@ -862,6 +894,7 @@ const CourseDetails = () => {
             reviews: 82
         },
         'dataanalysis': {
+            id: 'dataanalysis',
             title: 'Data Analysis',
             description: 'Learn data analysis with Python and visualization techniques.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
@@ -888,6 +921,7 @@ const CourseDetails = () => {
             reviews: 88
         },
         'git': {
+            id: 'GitHub',
             title: 'Git & GitHub',
             description: 'Master version control with Git and GitHub collaboration.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
@@ -913,6 +947,7 @@ const CourseDetails = () => {
             reviews: 102
         },
         'agile': {
+            id: 'agile',
             title: 'Agile & Scrum',
             description: 'Learn Agile methodologies and Scrum framework.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg',
@@ -939,6 +974,7 @@ const CourseDetails = () => {
             reviews: 76
         },
         'unity': {
+            id: 'unity',
             title: 'Unity Game Development',
             description: 'Learn Unity game development with C#.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg',
@@ -965,6 +1001,7 @@ const CourseDetails = () => {
             reviews: 89
         },
         'unreal': {
+            id: 'unreal',
             title: 'Unreal Engine Development',
             description: 'Master Unreal Engine for game development.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg',
@@ -991,6 +1028,7 @@ const CourseDetails = () => {
             reviews: 75
         },
         'godot': {
+            id: 'godot',
             title: 'Godot Game Development',
             description: 'Learn Godot game engine for 2D and 3D game development.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg',
@@ -1017,6 +1055,7 @@ const CourseDetails = () => {
             reviews: 68
         },
         'wordpress': {
+            id: 'wordpress',
             title: 'WordPress Development',
             description: 'Learn WordPress for website development and management.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg',
@@ -1043,6 +1082,7 @@ const CourseDetails = () => {
             reviews: 92
         },
         'blockchain': {
+            id: 'blockchain',
             title: 'Blockchain Development',
             description: 'Learn blockchain fundamentals and development.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ethereum/ethereum-original.svg',
@@ -1069,6 +1109,7 @@ const CourseDetails = () => {
             reviews: 78
         },
         'iot': {
+            id: ' iot',
             title: 'IoT Development',
             description: 'Learn Internet of Things development and implementation.',
             image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg',
@@ -1139,7 +1180,42 @@ const CourseDetails = () => {
                             </div>
                             <p className="description">{course.description}</p>
                             <div className="price">${course.price}</div>
-                            <Link to={`/courses/${course.id}`} className="enroll-button">Enroll Now</Link>
+
+
+
+
+
+
+
+
+
+                            
+                            {/* <Link to={`/courses/${course.id}.jsx`} target="_blank" rel="noopener noreferrer" className="enroll-button">Enroll Now</Link> */}
+                            {/* Updated Button with External Link */}
+                        <a href={
+                            courseId === 'vue'  ? '#' : 
+                            courseId === 'angular' ? '#':
+                            courseId === 'react' ? '#':
+                            courseId === 'unity' ? '#':
+                            courseId === 'unreal' ? '#':
+                            courseId === 'godot' ? '#':
+                            courseId === 'wordpress' ? '#':
+                            courseId === 'blockchain' ? '#':
+                            courseId === 'iot' ? '#':
+                            '#' }
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="enroll-button"
+                        >
+                            Learn More
+                        </a>
+
+
+
+
+
+
+
                         </div>
                     </div>
 
