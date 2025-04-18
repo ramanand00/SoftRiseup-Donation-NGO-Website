@@ -129,7 +129,7 @@ export default function Donate() {
                     amount: amount.toString(),
                     currency,
                     name: "SoftRiseup :)",
-                    description: "Donation for SoftRiseup Charity purpose.",
+                    description: "SoftRiseup",
                     image: "https://i.ibb.co/pWxpKHz/checkout.jpg",
                     order_id: order_id,
                     handler: async function (response) {
@@ -265,7 +265,7 @@ export default function Donate() {
             <PageHeader title={"Donate Now"} path={"/donate"} name={"Donate"} />
 
             {/* <!-- Donate Start --> */}
-            <div className="donations">
+            <div className="Learnings">
                 <h2 className='logs' style={{backgroundColor:recentLogin?'whitesmoke':'transparent'}}>{recentLogin.length>0?`Last Login: ${recentLogin}`:<span>&#8203;</span>}</h2>
                 <div className="container">
                     <div className="donate">

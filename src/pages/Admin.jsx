@@ -12,8 +12,8 @@ function Admin() {
     const [totalAmount, setTotalAmount] = useState(0);
     const [isEnabled, setIsEnabled] = useState(false);
     const [logs, setLogs] = useState([]);
-    const [donations, setDonations] = useState([]);
-    const [allDonations, setAllDonations] = useState([]);
+    const [Learnings, setLearnings] = useState([]);
+    const [allLearnings, setAllLearnings] = useState([]);
     const [auth, setAuth] = useState("");
     const navigate = useNavigate();
     const MySwal = withReactContent(Swal);
@@ -22,10 +22,10 @@ function Admin() {
         const user = localStorage.getItem("ADMIN_NGO");
         if (user) {
             setAuth(user);
-            fetchDonations(user);
+            fetchLearnings(user);
         } else {
             adminLogin();
-            setAllDonations([]);
+            setAllLearnings([]);
         }
     }, []);
 
@@ -72,10 +72,10 @@ function Admin() {
         });
     };
 
-    const fetchDonations = async (auth1) => {
+    const fetchLearnings = async (auth1) => {
         var options = {
             method: 'GET',
-            url: 'https://the-SoftRiseup-ngo-server.onrender.com/api/v1/search/allDonations',
+            url: 'https://the-SoftRiseup-ngo-server.onrender.com/api/v1/search/allLearnings',
             headers: {
                 Authorization: `Basic ${auth1}`,
                 'Content-Type': 'application/json'
@@ -84,7 +84,7 @@ function Admin() {
         await axios.request(options)
             .then((response) => {
                 // console.log(response.data);
-                setAllDonations(response.data);
+                setAllLearnings(response.data);
             }).catch((error) => {
                 console.log(error);
             });
@@ -94,7 +94,7 @@ function Admin() {
     const fetchUserInfo = async (mail) => {
         var options = {
             method: 'GET',
-            url: 'https://the-SoftRiseup-ngo-server.onrender.com/api/v1/search/donations?email=' + mail,
+            url: 'https://the-SoftRiseup-ngo-server.onrender.com/api/v1/search/Learnings?email=' + mail,
             headers: {
                 Authorization: `Basic ${auth}`,
                 'Content-Type': 'application/json'
@@ -103,17 +103,17 @@ function Admin() {
         await axios.request(options)
             .then((response) => {
                 // console.log(response.data);
-                let remainingDonations = [];
+                let remainingLearnings = [];
                 response.data.forEach(data => {
                     if ('totalAmount' in data && 'isEnabled' in data && 'logs' in data) {
                         setTotalAmount(data.totalAmount);
                         setLogs(data.logs);
                         setIsEnabled(data.isEnabled);
                     } else {
-                        remainingDonations.push(data);
+                        remainingLearnings.push(data);
                     }
                 });
-                setDonations(remainingDonations);
+                setLearnings(remainingLearnings);
             }).catch((error) => {
                 console.log(error);
             });
@@ -205,11 +205,11 @@ function Admin() {
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">Donations List</th>
+                                                        <th scope="row">Learnings List</th>
                                                         <td>
                                                             <div className="btn-group">
                                                                 <button className="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                    Donations
+                                                                    Learnings
                                                                 </button>
                                                                 <ul className="dropdown-menu" style={{ maxHeight: '240px', overflowY: 'auto' }}>
                                                                     <li className="dropdown-item">
@@ -222,11 +222,11 @@ function Admin() {
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
-                                                                                {donations.map((donation, index) => (
+                                                                                {Learnings.map((Learning, index) => (
                                                                                     <tr key={index}>
-                                                                                        <td>{donation.orderId}</td>
-                                                                                        <td>{donation.amount} </td>
-                                                                                        <td>{donation.date}</td>
+                                                                                        <td>{Learning.orderId}</td>
+                                                                                        <td>{Learning.amount} </td>
+                                                                                        <td>{Learning.date}</td>
                                                                                     </tr>
                                                                                 ))}
                                                                             </tbody>
@@ -265,33 +265,33 @@ function Admin() {
                     </div>
                     <div className="table-responsive" style={{overflowY: "auto", maxHeight: "60vh"}}>
                         <table className="table table-borderless table-dark table-hover">
-                            <caption className="caption-top text-light">List of Donations</caption>
+                            <caption className="caption-top text-light">List of Learnings</caption>
                             <thead className="thead-dark">
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Email</th>
-                                    <th scope="col">Donation</th>
+                                    <th scope="col">Learning</th>
                                     <th scope="col">Total</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {allDonations.map((donation, index) => (
+                                {allLearnings.map((Learning, index) => (
                                     <tr key={index} className="table-light">
                                         <th scope="row">{index + 1}</th>
-                                        <td>{donation._id}</td>
+                                        <td>{Learning._id}</td>
                                         <td>
                                             <div className="btn-group">
                                                 <button className="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    View Donations
+                                                    View Learnings
                                                 </button>
                                                 <ul className="dropdown-menu bg-dark" aria-labelledby={`dropdownMenuButton${index}`} style={{ maxHeight: '150px', overflowY: 'auto' }}>
-                                                    {donation.orderIds.map((orderId, i) => (
-                                                        <li key={i} className="dropdown-item text-success">{orderId}: {donation.amounts[i]} <i className='fa fa-indian-rupee' /></li>
+                                                    {Learning.orderIds.map((orderId, i) => (
+                                                        <li key={i} className="dropdown-item text-success">{orderId}: {Learning.amounts[i]} <i className='fa fa-indian-rupee' /></li>
                                                     ))}
                                                 </ul>
                                             </div>
                                         </td>
-                                        <td>{donation.totalAmount} <i className='fa fa-indian-rupee' /></td>
+                                        <td>{Learning.totalAmount} <i className='fa fa-indian-rupee' /></td>
                                     </tr>
                                 ))}
                             </tbody>
