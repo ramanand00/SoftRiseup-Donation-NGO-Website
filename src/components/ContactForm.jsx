@@ -69,10 +69,9 @@ function ContactForm() {
             {/* <!-- Contact Start --> */}
             <div className="contact">
                 <div className="container">
-                    <div className="section-header text-center">
-                        <h3>Get In Touch</h3>
-                        <h2>Contact for any query</h2>
-                    </div>
+                    {/* <div className="section-header text-center">
+                        <h2>Contact with us for any query</h2>
+                    </div> */}
                     <div className="contact-info">
                         <div className="contact-item">
                             <i className="fa fa-map-marker-alt"></i>

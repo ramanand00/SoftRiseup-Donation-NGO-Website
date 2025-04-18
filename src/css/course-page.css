@@ -107,15 +107,15 @@
 
 .section-header {
     padding: 15px 20px;
-    background: #f8f9fa;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.section-header h3 {
+.section-header h2 {
     margin: 0;
+    align-items: center;
     font-size: 18px;
 }
 
