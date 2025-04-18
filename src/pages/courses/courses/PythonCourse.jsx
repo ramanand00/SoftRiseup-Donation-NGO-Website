@@ -1,5 +1,5 @@
 import React from 'react';
-import CoursePage from '../courses/CoursePage';
+import CoursePage from '../CoursePage';
 
 const pythonCourse = {
     title: 'Python Programming',

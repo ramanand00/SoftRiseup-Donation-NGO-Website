@@ -16,7 +16,7 @@ const Csit = () => {
             courses: [
                 {
                     id: '1',
-                    title: 'BSc.CSIT First Semister',
+                    title: 'Computer Engineering First Semister',
                     description: 'Learn Vue.js framework for building modern web applications with reactive components.',
                     image: 'https://www.svgrepo.com/show/62204/student.svg',
                     duration: '90 days per semister',
@@ -24,7 +24,7 @@ const Csit = () => {
                 },
                 {
                     id: '2',
-                    title: 'BSc.CSIT Second Semister',
+                    title: 'Computer Engineering Second Semister',
                     description: 'Learn Vue.js framework for building modern web applications with reactive components.',
                     
                     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKfTIIPGMMqmzVSGl0Jthggt5FtELsPaAeAg&s',
@@ -33,7 +33,7 @@ const Csit = () => {
                 },
                 {
                     id: '3',
-                    title: 'BSc.CSIT Third Semister',
+                    title: 'Computer Engineering Third Semister',
                     description: 'Learn Vue.js framework for building modern web applications with reactive components.',
                     image: 'https://img.freepik.com/free-vector/student-club-abstract-concept-vector-illustration-student-organization-university-interest-club-afterschool-activity-program-college-association-professional-hobby-society-abstract-metaphor_335657-5900.jpg?semt=ais_hybrid&w=740',
                     duration: '90 days per semister',
@@ -41,7 +41,7 @@ const Csit = () => {
                 },
                 {
                     id: '4',
-                    title: 'BSc.CSIT Fourth Semister',
+                    title: 'Computer Engineering Fourth Semister',
                     description: 'Learn Vue.js framework for building modern web applications with reactive components.',
                     image: 'https://img.freepik.com/free-vector/workplace-culture-abstract-concept-vector-illustration-shared-values-belief-systems-attitude-work-company-team-corporate-culture-high-performance-employee-health-abstract-metaphor_335657-6126.jpg?w=360',
                     duration: '90 days per semister',
@@ -49,7 +49,7 @@ const Csit = () => {
                 },
                 {
                     id: '5',
-                    title: 'BSc.CSIT Fifth Semister',
+                    title: 'Computer Engineering Fifth Semister',
                     description: 'Learn Vue.js framework for building modern web applications with reactive components.',
                     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Ot1zFx25AM8IfPz4J_WjBXs1jylgfCh73Q&s',
                     duration: '90 days per semister',
@@ -57,7 +57,7 @@ const Csit = () => {
                 },
                 {
                     id: '6',
-                    title: 'BSc.CSIT Sixth Semister',
+                    title: 'Computer Engineering Sixth Semister',
                     description: 'Learn Vue.js framework for building modern web applications with reactive components.',
                     image: 'https://www.addwebsolution.com/app/uploads/2024/05/Head-Banner-581_408-5.svg',
                     duration: '90 days per semister',
@@ -65,7 +65,7 @@ const Csit = () => {
                 },
                 {
                     id: '7',
-                    title: 'BSc.CSIT Seventh Semister',
+                    title: 'Computer Engineering Seventh Semister',
                     description: 'Learn Vue.js framework for building modern web applications with reactive components.',
                     image: 'https://static.thenounproject.com/png/2142891-200.png',
                     duration: '90 days per semister',
@@ -73,7 +73,7 @@ const Csit = () => {
                 },
                 {
                     id: '8',
-                    title: 'BSc.CSIT Last Semister',
+                    title: 'Computer Engineering Last Semister',
                     description: 'Learn Vue.js framework for building modern web applications with reactive components.',
                     image: 'https://www.svgrepo.com/show/29505/businessman-with-suitcase-going-to-work-in-a-city.svg',
                     duration: '90 days per semister',

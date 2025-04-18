@@ -31,7 +31,7 @@ const Courses = () => {
                     level: 'Intermediate'
                 },
                 {
-                    id: 'nextjs',
+                    id: 'next',
                     title: 'Next.js',
                     description: 'Learn Next.js for building server-rendered React applications with optimal performance.',
                     image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
