@@ -88,10 +88,10 @@ export default function Navbar() {
                             <div className="nav-item dropdown" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
                                 <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Bachelor course</Link>
                                 <div className={dropdownOpen ? "dropdown-menu show" : "dropdown-menu"}>
-                                    <Link to="/" className="dropdown-item">BSc.CSIT</Link>
-                                    <Link to="/about" className="dropdown-item">B.IT</Link>
-                                    <Link to="/courses" className="dropdown-item">BCA</Link>
-                                    <Link to="/contact" className="dropdown-item">Computer Engineering</Link>
+                                    <Link to="/csit" className="dropdown-item">BSc.CSIT</Link>
+                                    <Link to="/bit" className="dropdown-item">B.IT</Link>
+                                    <Link to="/bca" className="dropdown-item">BCA</Link>
+                                    <Link to="/computer-engineering" className="dropdown-item">Computer Engineering</Link>
                                     <hr className='dropdown-divider' />
                                     <Link to="/donate" className="dropdown-item">Donate Now</Link>
                                 </div>
