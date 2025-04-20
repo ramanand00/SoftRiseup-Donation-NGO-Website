@@ -11,81 +11,57 @@ const Csit = () => {
 
     const courseCategories = [
         {
-            id: 'frontend',
+            id: 'CSIT2',
             title: 'Hello ITians... Welcome to BSc.CSIT',
             courses: [
                 {
-                    id: 'Csit1',
-                    title: 'BSc.CSIT First Semister',
+                    id: 'Discrete Structure',
+                    title: 'Discrete Structure',
                     description: 'Description',
                     image: 'https://www.svgrepo.com/show/62204/student.svg',
                     duration: '90 days per semister',
                     level: 'Basic/Startup'
                 },
                 {
-                    id: 'Csit2',
-                    title: 'BSc.CSIT Second Semister',
-                    description: 'Description',
+                    id: 'Object-Oriented Programming',
+                    title: 'Object-Oriented Programming',
+                    description: 'Description ',
                     
                     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKfTIIPGMMqmzVSGl0Jthggt5FtELsPaAeAg&s',
                     duration: '90 days per semister',
                     level: 'Intermediate'
                 },
                 {
-                    id: 'Csit3',
-                    title: 'BSc.CSIT Third Semister',
+                    id: 'Microprocessor',
+                    title: 'Microprocessor',
                     description: 'Description',
                     image: 'https://img.freepik.com/free-vector/student-club-abstract-concept-vector-illustration-student-organization-university-interest-club-afterschool-activity-program-college-association-professional-hobby-society-abstract-metaphor_335657-5900.jpg?semt=ais_hybrid&w=740',
                     duration: '90 days per semister',
                     level: 'Intermediate'
                 },
                 {
-                    id: 'Csit4',
-                    title: 'BSc.CSIT Fourth Semister',
+                    id: 'MathMathematics II',
+                    title: 'Mathematics II',
                     description: 'Description',
                     image: 'https://img.freepik.com/free-vector/workplace-culture-abstract-concept-vector-illustration-shared-values-belief-systems-attitude-work-company-team-corporate-culture-high-performance-employee-health-abstract-metaphor_335657-6126.jpg?w=360',
                     duration: '90 days per semister',
                     level: 'Intermediate'
                 },
                 {
-                    id: 'Csit5',
-                    title: 'BSc.CSIT Fifth Semister',
+                    id: 'Statistics-I',
+                    title: 'Statistics-I',
                     description: 'Description',
                     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Ot1zFx25AM8IfPz4J_WjBXs1jylgfCh73Q&s',
                     duration: '90 days per semister',
                     level: 'Intermediate'
                 },
                 {
-                    id: 'Csit6',
-                    title: 'BSc.CSIT Sixth Semister',
+                    id: 'Model',
+                    title: 'Model Question Paper',
                     description: 'Description',
-                    image: 'https://www.addwebsolution.com/app/uploads/2024/05/Head-Banner-581_408-5.svg',
+                    image: 'https://i.pinimg.com/736x/e9/0e/54/e90e541691d2ec8d98fa68c0f760495b.jpg',
                     duration: '90 days per semister',
                     level: 'Intermediate'
-                },
-                {
-                    id: 'Csit7',
-                    title: 'BSc.CSIT Seventh Semister',
-                    description: 'Description',
-                    image: 'https://static.thenounproject.com/png/2142891-200.png',
-                    duration: '90 days per semister',
-                    level: 'Intermediate'
-                },
-                {
-                    id: 'Csit8',
-                    title: 'BSc.CSIT Last Semister',
-                    description: 'Description',
-                    image: 'https://www.svgrepo.com/show/29505/businessman-with-suitcase-going-to-work-in-a-city.svg',
-                    duration: '90 days per semister',
-                    level: 'College_Final'
-                },
-                {
-                    id: 'Csit9',
-                    title: 'Projects for You',
-                    description: 'Description',
-                    image: 'https://cdni.iconscout.com/illustration/premium/thumb/5g-technology-illustration-download-in-svg-png-gif-file-formats--network-connection-tower-pack-science-illustrations-4606256.png?f=webp',
-                    duration: '90 days per semister',
-                    level: 'Projects_Handeling'
                 }
             ]
         }
@@ -106,7 +82,7 @@ const Csit = () => {
     return (
         <>
             <Navbar />
-            <PageHeader title="Batchelor of Science in Computer Science & Information Technology" path="/BSc.CSIT" name="BSc.CSIT" />
+            <PageHeader title="BSc.CSIT Second Semister" path="/BSc.CSIT" name="BSc.CSIT" />
             <div className="courses-page">
                 <div className="container">
                     <div className="search-container">
@@ -140,7 +116,7 @@ const Csit = () => {
                                                     <span className="duration">Duration: {course.duration}</span>
                                                     <span className="level">Level: {course.level}</span>
                                                 </div>
-                                                <Link to={`/BSc.CSIT/${course.id}`} className="view-course-button">
+                                                <Link to={`/csit/${course.id}`} className="view-course-button">
                                                     View Course
                                                 </Link>
                                             </div>

@@ -15,6 +15,16 @@ import Bit from "./pages/BatchelorCourses/Bit";
 import Bca from "./pages/BatchelorCourses/Bca";
 import Computereng from "./pages/BatchelorCourses/Computereng";
 
+//CSIT Semister Courses
+import Csit1 from "./BachelorBlogs/Csit1/Csit1";
+import Csit2 from "./BachelorBlogs/Csit2/Csit2";
+import Csit3 from "./BachelorBlogs/Csit3/Csit3";
+import Csit4 from "./BachelorBlogs/Csit4/Csit4";
+import Csit5 from "./BachelorBlogs/Csit5/Csit5";
+import Csit6 from "./BachelorBlogs/Csit6/Csit6";
+import Csit7 from "./BachelorBlogs/Csit7/Csit7";
+import Csit8 from "./BachelorBlogs/Csit8/Csit8";
+
 // Lets Import the courses
 import AngularCourse from "./pages/courses/courses/AngularCourse";
 import BootstrapCourse from "./pages/courses/courses/BootstrapCourse";
@@ -50,10 +60,20 @@ export default function App() {
         <Route exact path="*" element={<Navigate to={"/"} />} />
 
         {/* let's import the batchelor courses */}
-        <Route exact path="/csit" element={<Csit />} />
+        <Route exact path="/BSc.CSIT" element={<Csit />} />
         <Route exact path="/bit" element={<Bit />} />
         <Route exact path="/bca" element={<Bca />} />
         <Route exact path="/computer-engineering" element={<Computereng />} />
+
+        {/* CSIT Semister Courses */}
+        <Route exact path="/BSc.CSIT/csit1" element={<Csit1 />} />
+        <Route exact path="/BSc.CSIT/csit2" element={<Csit2 />} />
+        <Route exact path="/BSc.CSIT/csit3" element={<Csit3 />} />
+        <Route exact path="/BSc.CSIT/csit4" element={<Csit4 />} />
+        <Route exact path="/BSc.CSIT/csit5" element={<Csit5 />} />
+        <Route exact path="/BSc.CSIT/csit6" element={<Csit6 />} />
+        <Route exact path="/BSc.CSIT/csit7" element={<Csit7 />} />
+        <Route exact path="/BSc.CSIT/csit8" element={<Csit8 />} />
 
         {/* let's import the courses */}
         <Route exact path="/courses/angular" element={<AngularCourse />} />
